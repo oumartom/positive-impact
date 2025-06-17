@@ -1,0 +1,340 @@
+/* 
+ * Responsive CSS for Positive Impact Website
+ * Author: Manus AI
+ * Version: 1.0
+ */
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .header .container {
+        padding: 10px 15px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .about-cards, 
+    .services-grid, 
+    .categories-grid, 
+    .stats-grid, 
+    .team-grid, 
+    .benefits-grid, 
+    .features-grid, 
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-item {
+        width: 120px;
+    }
+    
+    .testimonial-content {
+        padding: 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer {
+        padding: 50px 0 0;
+    }
+    
+    .language-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .service-calculator .form-group input {
+        font-size: 14px;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero {
+        padding: 130px 0 70px;
+    }
+    
+    .services-grid, 
+    .categories-grid, 
+    .team-grid, 
+    .benefits-grid, 
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero {
+        padding: 140px 0 80px;
+    }
+    
+    .services-grid, 
+    .categories-grid, 
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero {
+        padding: 150px 0 90px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Specific responsive adjustments */
+
+/* Navigation menu for mobile */
+@media (max-width: 991px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}
+
+/* Timeline responsive adjustments */
+@media (max-width: 991px) {
+    .timeline-container::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .right {
+        left: 0;
+    }
+    
+    .left::after, .right::after {
+        left: 15px;
+    }
+    
+    .left .timeline-content::before {
+        content: none;
+    }
+    
+    .right .timeline-content::before {
+        left: -15px;
+    }
+}
+
+/* Service overview responsive adjustments */
+@media (max-width: 991px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+/* Calculator responsive adjustments */
+@media (max-width: 991px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator-results {
+        margin-top: 30px;
+    }
+}
+
+/* Feature items responsive adjustments */
+@media (max-width: 767px) {
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Testimonial responsive adjustments */
+@media (max-width: 767px) {
+    .client-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .client-info img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Modal responsive adjustments */
+@media (max-width: 767px) {
+    .modal-content {
+        padding: 20px;
+        margin: 20px;
+        width: auto;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header, .footer, .cta, .hero {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 20pt;
+    }
+    
+    h3 {
+        font-size: 16pt;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .service-card, .category-card, .benefit-item, .feature-item, .case-study {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

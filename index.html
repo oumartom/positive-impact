@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection - Positive Impact</title>
+    <meta name="description" content="Choose your preferred language to explore Positive Impact's innovative solutions and services">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Language detection and redirection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user has previously selected a language
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            
+            if (savedLanguage) {
+                // Redirect to saved language
+                window.location.href = savedLanguage === 'fr' ? 'fr/index.html' : 'en/index.html';
+            } else {
+                // Auto-detect browser language
+                const userLang = navigator.language || navigator.userLanguage;
+                
+                // Check if browser language starts with 'fr'
+                if (userLang.startsWith('fr')) {
+                    window.location.href = 'fr/index.html';
+                } else {
+                    window.location.href = 'en/index.html';
+                }
+            }
+        });
+        
+        // Save language preference
+        function setLanguage(lang) {
+            localStorage.setItem('preferredLanguage', lang);
+            window.location.href = lang === 'fr' ? 'fr/index.html' : 'en/index.html';
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="language-selection">
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="Positive Impact Logo">
+        </div>
+        <h1>Select Your Language / Choisissez Votre Langue</h1>
+        <div class="language-buttons">
+            <a href="en/index.html" class="btn btn-primary" onclick="return setLanguage('en')">English</a>
+            <a href="fr/index.html" class="btn btn-secondary" onclick="return setLanguage('fr')">Français</a>
+        </div>
+    </div>
+</body>
+</html>
