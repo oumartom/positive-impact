@@ -17,7 +17,7 @@
     }
     .references-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 2 colonnes */
       gap: 30px;
       justify-items: center;
       align-items: start;
@@ -27,8 +27,9 @@
       border: 1px solid #eee;
       border-radius: 8px;
       padding: 20px;
-      max-width: 300px;
+      max-width: 600px;
       transition: transform 0.3s ease;
+      text-align: left;
     }
     .reference-card:hover {
       transform: translateY(-5px);
@@ -43,12 +44,18 @@
     }
     .reference-card h3 {
       margin: 10px 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      text-align: center;
     }
     .reference-card p {
-      font-size: 0.95em;
+      font-size: 1em;
       color: #555;
-      line-height: 1.4;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .references-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -100,6 +107,8 @@
         <p>Nous avons collaboré avec des entreprises et organisations variées, issues de différents secteurs d’activité.</p>
       </div>
       <div class="references-grid">
+        <!-- Vos références ici (comme dans votre code) -->
+        <!-- Exemple d'une carte -->
         <div class="reference-card">
           <img src="../images/team/betna.jpg" alt="BETNA">
           <h3>BETNA</h3>
@@ -116,15 +125,46 @@
           <p>Apex Audit & Consulting, cabinet basé à N’Djamena, offre des services de comptabilité, d’audit et de conseil. Dans le cadre de notre partenariat, nous avons apporté notre expertise dans la révision et la mise à jour de leurs outils de pilotage financier, le renforcement des capacités de l’équipe comptable, ainsi que l’amélioration des procédures internes pour une conformité optimale avec les exigences fiscales et réglementaires locales.</p>
         </div>
         <div class="reference-card">
-          <img src="../images/team/peschaud.jpeg" alt="Saphir">
+          <img src="../images/team/saphir.jpg" alt="Saphir">
           <h3>Saphir</h3>
           <p>Saphir est une entreprise dynamique intervenant dans la gestion opérationnelle et administrative de projets. Notre mission a consisté à moderniser leur système de comptabilité et à mettre en place des outils numériques pour améliorer la gestion quotidienne. En parallèle, nous avons formé leurs équipes à de nouvelles pratiques de gestion afin de renforcer l’efficience de leur organisation interne.</p>
         </div>
         <div class="reference-card">
-          <img src="../images/team/peschaud.jpeg" alt="Anar">
-          <h3>Anar</h3>
-          <p>L’ANAR, en tant qu’autorité de régulation, nous a confié une mission stratégique d’audit et d’harmonisation des pratiques comptables. Nous avons collaboré avec les équipes internes pour identifier les écarts réglementaires, proposer des mécanismes correctifs, et renforcer le dispositif de contrôle comptable en vue de garantir la transparence et la bonne gouvernance des ressources.</p>
+          <img src="../images/team/anar.png" alt="Saphir">
+          <h3>ANAR-CSU</h3>
+          <p>ANAR-CSU – Agence de Régulation de la Couverture Santé Universelle <br>
+
+            Nous avons accompagné l’ANAR-CSU dans une mission complète de régularisation comptable et d’assistance périodique. Nos interventions ont porté notamment sur : <br>
+
+            <li>La revue détaillée des opérations comptables et administratives effectuées ;</li>
+
+            <li>La régularisation des écritures d’ouverture et la documentation exhaustive des transactions ;</li>
+
+            <li>L’élaboration et la mise en place d’outils de gestion adaptés ;</li>
+
+            <li>L’assistance à la gestion de la paie du personnel et aux déclarations fiscales et sociales ;</li>
+
+            <li>La formation et l’accompagnement des équipes dans l’appropriation des outils développés.</li>
+
+            <li>Ce travail a permis de renforcer la transparence, la conformité réglementaire et l’efficacité des processus financiers de l’Agence.</li></p>
         </div>
+        <div class="reference-card">
+          <!-- Si tu as un logo ou image de FIFTY Business, remplace le src ici, sinon supprime la balise img -->
+          <img src="../images/team/fifty.jpg" alt="FIFTY Business" />
+          <h3>FIFTY Business</h3>
+          <div class="reference-card">
+  
+          <p>FIFTY Business est une entreprise tchadienne innovante, fondée en 2019 à N'Djamena. Nous avons eu le plaisir de collaborer avec eux afin d’apporter des solutions adaptées et modernes aux problématiques rencontrées par leurs clients.</p>
+          <p>Notre accompagnement a porté sur la mise en place de stratégies numériques innovantes conformes aux standards internationaux, contribuant à la digitalisation et à la performance de leurs opérations.</p>
+          <p>Cette collaboration témoigne de notre engagement commun à créer de la valeur par des solutions numériques innovantes, répondant aux besoins spécifiques du marché local et régional.</p>
+</div>
+
+    
+          
+        </div>
+                
+        <!-- Ajoutez ici toutes les autres cartes comme dans votre code existant -->
+        <!-- ... -->
       </div>
     </div>
   </section>

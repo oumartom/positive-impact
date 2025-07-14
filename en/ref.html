@@ -17,7 +17,7 @@
     }
     .references-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 30px;
       justify-items: center;
       align-items: start;
@@ -27,8 +27,9 @@
       border: 1px solid #eee;
       border-radius: 8px;
       padding: 20px;
-      max-width: 300px;
+      max-width: 600px;
       transition: transform 0.3s ease;
+      text-align: left;
     }
     .reference-card:hover {
       transform: translateY(-5px);
@@ -43,12 +44,18 @@
     }
     .reference-card h3 {
       margin: 10px 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      text-align: center;
     }
     .reference-card p {
-      font-size: 0.95em;
+      font-size: 1em;
       color: #555;
-      line-height: 1.4;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .references-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -68,15 +75,15 @@
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a href="ref.html" class="active">References</a></li>
+          <li><a href="equipe.html">Our Team</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ref.html" class="active">Our References</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="language-switcher">
-        <a href="#" class="active">EN</a>
-        <a href="../fr/ref.html">FR</a>
+        <a href="../en/ref.html" class="active">EN</a>
+        <a href="#">FR</a>
       </div>
     </div>
   </header>
@@ -86,7 +93,7 @@
     <div class="container">
       <div class="hero-content">
         <h1>Our References</h1>
-        <p>They have trusted us to support them in their strategic projects</p>
+        <p>They trusted us to support them in their strategic projects</p>
       </div>
     </div>
   </section>
@@ -97,34 +104,62 @@
       <div class="section-header">
         <h2>Our Clients and Partners</h2>
         <div class="section-divider"></div>
-        <p>We have collaborated with a wide range of companies and organizations from various industries.</p>
+        <p>We have collaborated with diverse companies and organizations across various sectors.</p>
       </div>
       <div class="references-grid">
+
+        <!-- Existing reference cards example -->
         <div class="reference-card">
-          <img src="../images/team/betna.jpg" alt="BETNA">
+          <img src="../images/team/betna.jpg" alt="BETNA" />
           <h3>BETNA</h3>
-          <p>Comprehensive support in administrative and financial management, process optimization, and strengthening the skills of the management team.</p>
+          <p>BETNA is a company specialized in managing high-end residences and villas. They requested our support for comprehensive administrative and financial management. Our interventions helped structure internal processes, improve financial flow management, and assist in formalizing contractual relations with partners and tenants.</p>
         </div>
+
         <div class="reference-card">
-          <img src="../images/team/peschaud.jpeg" alt="Peschaud">
+          <img src="../images/team/peschaud.jpeg" alt="Peschaud" />
           <h3>Peschaud</h3>
-          <p>Strategic consulting and accounting assistance to enhance operational performance and regulatory compliance.</p>
+          <p>Peschaud International is a logistics company with over 60 years of experience in complex geographic environments, operating in land, river, lake, and maritime transport. We assisted their teams in stock operational management and physical inventory. This mission improved stock data reliability, optimized equipment availability levels, and strengthened the monitoring of goods entries and exits in line with internal quality and safety standards.</p>
         </div>
+
         <div class="reference-card">
-          <img src="../images/team/apex.png" alt="Apex Audit Consulting">
+          <img src="../images/team/apex.png" alt="Apex Audit Consulting" />
           <h3>Apex Audit Consulting</h3>
-          <p>Financial audit assignments and support in implementing effective internal control systems.</p>
+          <p>Apex Audit & Consulting, based in N'Djamena, offers accounting, auditing, and consulting services. Within our partnership, we provided expertise in reviewing and updating their financial management tools, strengthening the accounting team’s capacities, and improving internal procedures for optimal compliance with local fiscal and regulatory requirements.</p>
         </div>
+
         <div class="reference-card">
-          <img src="../images/team/peschaud.jpeg" alt="Saphir">
+          <img src="../images/team/saphir.jpg" alt="Saphir" />
           <h3>Saphir</h3>
-          <p>Support for digital transformation, modernization of management tools, and capacity building for project teams.</p>
+          <p>Saphir is a dynamic company involved in operational and administrative project management. Our mission included modernizing their accounting system and implementing digital tools to enhance daily management. We also trained their teams on new management practices to improve internal organizational efficiency.</p>
         </div>
+
         <div class="reference-card">
-          <img src="../images/team/peschaud.jpeg" alt="Anar">
-          <h3>Anar</h3>
-          <p>Operational support, organizational consulting, and strategic monitoring to ensure sustainable business continuity.</p>
+          <img src="../images/team/anar.png" alt="ANAR-CSU" />
+          <h3>ANAR-CSU</h3>
+          <p>ANAR-CSU – Agency for the Regulation of Universal Health Coverage<br/>
+            We supported ANAR-CSU in a comprehensive accounting regularization and periodic assistance mission. Our interventions included:<br/>
+            <ul>
+              <li>Detailed review of accounting and administrative operations;</li>
+              <li>Regularization of opening entries and exhaustive transaction documentation;</li>
+              <li>Development and implementation of adapted management tools;</li>
+              <li>Payroll management assistance and tax/social declarations support;</li>
+              <li>Training and support of teams in mastering developed tools.</li>
+              <li>This work strengthened transparency, regulatory compliance, and the efficiency of the Agency's financial processes.</li>
+            </ul>
+          </p>
         </div>
+
+        <!-- New FIFTY Business reference card -->
+        <div class="reference-card">
+          <img src="../images/team/fifty.jpg" alt="FIFTY Business" />
+          <h3>FIFTY Business</h3>
+          <p>FIFTY Business is an innovative Chadian company founded in 2019 in N'Djamena. We had the pleasure of collaborating with them to provide tailored and modern solutions to their clients' challenges.</p>
+          <p>Our support focused on implementing innovative digital strategies aligned with international standards, contributing to the digitalization and enhanced performance of their operations.</p>
+          <p>This collaboration reflects our shared commitment to creating value through innovative digital solutions that meet the specific needs of the local and regional market.</p>
+        </div>
+
+        <!-- Add other cards here as needed -->
+
       </div>
     </div>
   </section>
@@ -132,8 +167,8 @@
   <!-- Call to Action -->
   <section class="cta">
     <div class="container">
-      <h2>Want to partner with us?</h2>
-      <p>Contact us to learn how we can help your organization achieve greater performance and positive impact.</p>
+      <h2>Want to team up with us?</h2>
+      <p>Contact us to discover how we can support your company towards greater performance and positive impact.</p>
       <a href="contact.html" class="btn btn-primary">Contact Us</a>
     </div>
   </section>
@@ -143,7 +178,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="../images/logo/logo1.png" alt="Positive Impact Logo">
+          <img src="../images/logo/logo1.png" alt="Positive Impact Logo" />
           <p>Creating meaningful change through innovative solutions and strategic partnerships.</p>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -157,9 +192,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="team.html">Our Team</a></li>
-            <li><a href="ref.html">References</a></li>
+            <li><a href="ref.html">Our References</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -168,17 +203,17 @@
           <ul>
             <li><a href="services.html#strategic-consulting">Management Consulting</a></li>
             <li><a href="call-center-bpo.html">Project Management</a></li>
-            <li><a href="services.html#digital-transformation">Tax & Accounting Support</a></li>
+            <li><a href="services.html#digital-transformation">Tax & Accounting Assistance</a></li>
             <li><a href="services.html#business-development">Human Resources & Training</a></li>
-            <li><a href="services.html#talent-development">Information Technology</a></li>
+            <li><a href="services.html#talent-development">Information Technologies</a></li>
             <li><a href="services.html#digital-transformation">Digital Marketing</a></li>
-            <li><a href="services.html#business-development">Service Delivery</a></li>
+            <li><a href="services.html#business-development">Service Provision</a></li>
             <li><a href="services.html#talent-development">Others...</a></li>
           </ul>
         </div>
         <div class="footer-contact">
           <h3>Contact Us</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Headquarters in Sabangali</p>
+          <p><i class="fas fa-map-marker-alt"></i> Head Office in Sabangali</p>
           <p><i class="fas fa-phone"></i> (+235) 61 60 00 14 / 99 90 02 31 / 66 21 79 62</p>
           <p><i class="fas fa-envelope"></i> direction@pimpact.net</p>
         </div>

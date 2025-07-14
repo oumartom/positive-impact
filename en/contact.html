@@ -1,340 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Positive Impact</title>
-    <meta name="description" content="Get in touch with Positive Impact to discuss how we can help your organization create meaningful change through innovative solutions.">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Positive Impact</title>
+  <meta
+    name="description"
+    content="Contact Positive Impact to discuss how we can help your organization create meaningful change through innovative solutions."
+  />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .contact-wrapper {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .contact-info-side {
+      flex: 1 1 350px;
+    }
+    .contact-form-side {
+      flex: 1 1 350px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 992px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="../images/logo/logo.png" alt="Logo Positive Impact">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="ref.html">Our references </a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="language-switcher">
-                <a href="#" class="active">EN</a>
-                <a href="../fr/contact.html">FR</a>
-            </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../images/logo/logo.png" alt="Positive Impact Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
         </div>
-    </header>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="ref.html">References</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <a href="../fr/contact.html">FR</a>
+        <a href="#" class="active">EN</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero service-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Contact Us</h1>
-                <p>Get in touch to discuss how we can help your organization create positive impact</p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero service-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>
+          Get in touch to discuss how we can help your organization create a
+          positive impact
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Information -->
-    <section class="contact-info">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <div class="section-divider"></div>
-                <p>We're here to answer your questions and discuss how our services can help your organization. Reach out to us through any of the following channels or use the form below.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Visit Us</h3>
-                    <p>Siège sociale a Sabangali</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Call Us</h3>
-                    <p>(+235) 61 60 00 14 / 99 90 02 31 / 66 21 79 62</p><br>Monday-Friday, 9am-6pm</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>direction@pimpact.net<br>We respond within 24 hours</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Follow Us</h3>
-                    <div class="social-icons-contact">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="contact-form-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Send Us a Message</h2>
-                <div class="section-divider"></div>
-                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-            </div>
-            <div class="contact-form-container">
-                <form id="contact-form" class="contact-form" action="#" method="POST">
-                    <input type="hidden" name="recipient" value="direction@pimpact.net">
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    
-                    <!-- <div class="form-group">
-                        <label for="service-interest">Service of Interest</label>
-                        <select id="service-interest" name="service-interest">
-                            <option value="">Please select...</option>
-                            <option value="Strategic Consulting">Strategic Consulting</option>
-                            <option value="Call Center BPO">Call Center BPO</option>
-                            <option value="Digital Transformation">Digital Transformation</option>
-                            <option value="Business Development">Business Development</option>
-                            <option value="Talent Development">Talent Development</option>
-                            <option value="Sustainable Solutions">Sustainable Solutions</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div> -->
-                    
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-                        <label for="privacy-policy">I agree to the privacy policy and consent to having my data processed.</label>
-                    </div>
-                    
-                    <div class="form-submit">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                    
-                    <div id="form-response" class="form-response"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-   <section class="map-section full-width">
-    <div class="section-header">
-        <h2>Notre Emplacement</h2>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
         <div class="section-divider"></div>
+        <p>
+          We are here to answer your questions and discuss how our services can
+          help your organization. Contact us through any of the channels below
+          or use the form.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Information -->
+        <div class="contact-info-side">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Visit Us</h3>
+              <p>Head Office in Sabangali<br />P.O. Box: 969</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>(+235) 61 60 00 14 / 99 90 02 31 / 66 21 79 62</p>
+              <br />Monday-Friday, 9am-6pm
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Send Us an Email</h3>
+              <p>direction@pimpact.net<br />We reply within 24 hours</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Follow Us</h3>
+              <div class="social-icons-contact">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-side">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="recipient"
+              value="direction@pimpact.net"
+            />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              <label for="privacy-policy"
+                >I accept the privacy policy and consent to the processing of my
+                data.</label
+              >
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-response" class="form-response"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section full-width">
+    <div class="section-header">
+      <h2>Our Location</h2>
+      <div class="section-divider"></div>
     </div>
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3158294835425!2d15.064471973192383!3d12.09051773358632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11196198115d7b19%3A0x8a661d2e1db9111f!2s60%20Villas!5e0!3m2!1sfr!2ses!4v1750077973384!5m2!1sfr!2ses" 
-            width="100%" 
-            height="500" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3158294835425!2d15.064471973192383!3d12.09051773358632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11196198115d7b19%3A0x8a661d2e1db9111f!2s60%20Villas!5e0!3m2!1sen!2ses!4v1750077973384!5m2!1sen!2ses"
+        width="100%"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-</section>
+  </section>
 
-    <!-- Global Offices -->
-    <section class="global-offices">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Global Offices</h2>
-                <div class="section-divider"></div>
-                <p>With a presence across three continents, we're positioned to serve clients around the world.</p>
-            </div>
-            <div class="offices-grid">
-                <div class="office-card">
-                    <div class="office-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>North America</h3>
-                    <p>123 Impact Way, Suite 500<br>Innovation District, CA 90210<br>United States</p>
-                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                </div>
-                <div class="office-card">
-                    <div class="office-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Europe</h3>
-                    <p>45 Innovation Square<br>London, EC2A 4BX<br>United Kingdom</p>
-                    <p><strong>Phone:</strong> +44 20 7123 4567</p>
-                </div>
-                <div class="office-card">
-                    <div class="office-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Asia Pacific</h3>
-                    <p>88 Harmony Tower, Level 32<br>Singapore 018956</p>
-                    <p><strong>Phone:</strong> +65 6123 4567</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Call to Action -->
+ 
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What is the typical process for engaging with Positive Impact?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Our engagement process typically begins with an initial consultation to understand your needs and objectives. We then develop a tailored proposal outlining our approach, timeline, and investment. Once approved, we move into the discovery phase, followed by strategy development, implementation, and ongoing evaluation and refinement.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How quickly can you start working on our project?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Our ability to start depends on the scope of your project and our current commitments. For most engagements, we can begin the initial consultation within 1-2 weeks of your inquiry. For urgent needs, we do our best to accommodate expedited timelines. We'll provide a specific timeline during our initial discussions.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you work with clients internationally?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we work with clients globally. With offices in North America, Europe, and Asia Pacific, and a team that speaks multiple languages, we're well-positioned to serve clients around the world. We use a combination of in-person and virtual collaboration tools to ensure effective communication regardless of location.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What industries do you specialize in?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We have experience across a wide range of industries, including financial services, retail & e-commerce, healthcare, manufacturing, education, technology, travel & hospitality, and non-profit. Our diverse team brings both industry-specific knowledge and cross-sector insights to every engagement.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Create a Positive Impact?</h2>
-            <p>Contact us today to discuss how we can help your organization achieve its goals.</p>
-            <a href="#contact-form" class="btn btn-primary">Get in Touch</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-   <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="../images/logo/logo1.png" alt="Positive Impact Logo">
-                <p>Creating meaningful change through innovative solutions and strategic partnerships.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="ref.html">Our References</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-services">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="services.html#strategic-consulting">Management Consulting</a></li>
-                    <li><a href="call-center-bpo.html">Project Management</a></li>
-                    <li><a href="services.html#digital-transformation">Tax & Accounting Assistance</a></li>
-                    <li><a href="services.html#business-development">Human Resources & Training</a></li>
-                    <li><a href="services.html#talent-development">Information and Communication Technology</a></li>
-                    <li><a href="services.html#digital-transformation">Communication & Digital Marketing</a></li>
-                    <li><a href="services.html#business-development">Service Provision</a></li>
-                    <li><a href="services.html#talent-development">Others...</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Head Office in Sabangali</p>
-                <p><i class="fas fa-phone"></i> (+235) 61 60 00 14 / 99 90 02 31 / 66 21 79 62</p>
-                <p><i class="fas fa-envelope"></i> direction@pimpact.net</p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../images/logo/logo1.png" alt="Positive Impact Logo" />
+          <p>
+            Creating meaningful change through innovative solutions and
+            strategic partnerships.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Positive Impact. All rights reserved.</p>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="ref.html">References</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html#strategic-consulting">Management Consulting</a></li>
+            <li><a href="call-center-bpo.html">Project Management</a></li>
+            <li><a href="services.html#digital-transformation">Tax & Accounting Assistance</a></li>
+            <li><a href="services.html#business-development">Human Resources & Training</a></li>
+            <li><a href="services.html#talent-development">Information Technology</a></li>
+            <li><a href="services.html#digital-transformation">Digital Marketing</a></li>
+            <li><a href="services.html#business-development">Service Provision</a></li>
+            <li><a href="services.html#talent-development">Others...</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Head Office in Sabangali</p>
+          <p><i class="fas fa-phone"></i> (+235) 61 60 00 14 / 99 90 02 31 / 66 21 79 62</p>
+          <p><i class="fas fa-envelope"></i> direction@pimpact.net</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Positive Impact. All rights reserved.</p>
+      </div>
     </div>
-</footer>
-
-
-
-    <script src="../js/main.js"></script>
-    <script src="../js/animations.js"></script>
-    <script src="../js/contact-form.js"></script>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/contact-form.js"></script>
 </body>
 </html>
